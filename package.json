@@ -5,7 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "postinstall": "npm run build",
+    "start": "node server.js",
     "awesome": "nodemon ./bin/www",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
